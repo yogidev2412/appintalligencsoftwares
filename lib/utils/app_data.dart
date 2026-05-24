@@ -178,7 +178,7 @@ class AppData {
     ),
     TeamModel(
       name: 'Yuva Dharshini',
-      role: 'Head of Design',
+      role: 'Flutter Developer - Android | IOS',
       description:
           'UI/UX specialist crafting beautiful, intuitive digital experiences.',
       icon: FontAwesomeIcons.penNib,

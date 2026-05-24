@@ -126,11 +126,6 @@ class _AppLoadingWrapperState extends State<AppLoadingWrapper>
   Widget build(BuildContext context) {
     if (_loaded) return const HomePage();
     return HomePage();
-
-    // return FadeTransition(
-    //   opacity: _fadeAnim,
-    //   child: _SplashScreen(),
-    // );
   }
 }
 
