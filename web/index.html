@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="App Intelligence Softwares - Professional software company specializing in Android & iOS app development, web development, SaaS products, AI solutions, and digital marketing.">
+  <meta name="keywords" content="app development, iOS development, Android development, web development, AI solutions, SaaS, digital marketing, software company, Tamil Nadu, India">
+  <meta name="author" content="App Intelligence Softwares">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="App Intelligence Softwares - Build Smarter Products">
+  <meta property="og:description" content="We craft intelligent apps, scalable web platforms, and AI-powered solutions that transform businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aisoftwares.in">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="App Intelligence Softwares">
+  <meta name="twitter:description" content="Build Smarter Products with AI Softwares">
+  
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <title>App Intelligence Softwares | Android • iOS • Web • AI • SaaS</title>
+  
+  <style>
+    /* Loading screen styles */
+    body {
+      background-color: #0A0E1A;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    #loading {
+      position: fixed;
+      inset: 0;
+      background: #0A0E1A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+    
+    #loading.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .loader-logo {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, #2563EB, #06B6D4);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 16px;
+      box-shadow: 0 0 40px rgba(37, 99, 235, 0.4);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    
+    .loader-text {
+      color: #E2E8F0;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    .loader-sub {
+      color: #64748B;
+      font-size: 13px;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 40px rgba(37,99,235,0.4); }
+      50% { transform: scale(1.05); box-shadow: 0 0 60px rgba(37,99,235,0.6); }
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML loading screen shown until Flutter initialises -->
+  <div id="loading">
+    <div class="loader-logo">AI</div>
+    <div class="loader-text">App Intelligence Softwares</div>
+    <div class="loader-sub">Initialising...</div>
+  </div>
+
+  <script>
+    window.addEventListener('flutter-first-frame', function() {
+      var loading = document.getElementById('loading');
+      loading.classList.add('hidden');
+      setTimeout(function() { loading.remove(); }, 500);
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
