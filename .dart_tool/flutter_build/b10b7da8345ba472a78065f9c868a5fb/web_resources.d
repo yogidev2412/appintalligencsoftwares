@@ -1,1 +1,0 @@
-:  /Users/yuvayogesh/Downloads/ai_softwares_flutter_web/web/index.html
